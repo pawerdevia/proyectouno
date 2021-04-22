@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+    
+    * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+
+    body{
+        --color-texto: #060A24;
+        --blanco:#fff;
+        --verde-claro:#00F3BB;
+        --color-azul:#0000EC;
+        --fuente-plex-mono:'IBM Plex Mono', monospace;
+        --fuente-plex-sans:'IBM Plex Sans', sans-serif;
+    }
+    
+    nav {
+    background: var(--blanco);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    }
+
+    .logo{
+        width: 36px;
+        height: 36px;
+    }
+    nav ul li {
+    font-family: var(--fuente-plex-mono);
+    display: inline-block;
+    margin: 0 30px;
+    }
+    nav ul li a {
+    color: var(--color-texto);
+    font-size: 16px;
+    }
+    a:hover {
+        color: var(--verde-claro);
+        text-decoration: line-through;
+        transition: all .5s;
+    }
+
+    a:active{
+        color: RGBA(6,10,36,0.56);
+        text-decoration: line-through;
+    }
+    .checkbtn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    }
+#check {
+    display: none;
+}
+
+/*SECCION1*/
+.seccion1{
+    padding: 12% 0% 0% 12%;
+}
+
+.seccion1 .sub-1{
+    font-size: 64px;
+    font-family: var(--fuente-plex-sans);
+}
+.seccion1 .sub-1 .tachado{
+    text-decoration: line-through;
+}
+.seccion1 .sub-1 .punto{
+    color: var(--color-azul);
+}
+
+.seccion1 .des-1{
+    font-size: 16px;
+    font-family: var(--fuente-plex-mono);
+    max-width: 40vw;
+}
+
+.boton{
+    width: 226px;
+    height: 56px;
+    background-color: var(--verde-claro);
+    font-family: var(--fuente-plex-mono);
+    font-weight: 600;
+    border: none;
+}
+
+.boton:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: var(--blanco);
+}
+
+.boton-1{
+    margin-top: 56px;
+    font-size: 18px;
+}
+/*FIN SECCION1*/
+
+/*SECCION 2*/
+.seccion2{
+    min-height: 100vh;
+    padding: 12% 5%;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.sub{
+    font-family:var(--fuente-plex-sans);
+    font-size: 48px;
+}
+.seccion2 .sub-2{
+    color: var(--blanco);
+    padding-left: 100px;
+}
+.canciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.cancion{
+    width: 45%;
+    margin:26px;
+}
+
+iframe { 
+    border: none; 
+}
+/*FIN SECCION 2*/
+
+/*SECCION 3*/
+.seccion3{
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+.celular{
+    position: relative;
+    top: -150px;
+    width: 35%;
+    height: auto;
+    margin-right: 13%;
+}
+
+.seccion3 .sub-3{
+    font-weight: 300;
+}
+
+.des-seccion3{
+    flex-direction: column;
+    margin-top: -20%;
+}
+.texto-seccion3{
+    font-size: 16px;
+    font-family: var(--fuente-plex-mono);
+    max-width: 50%;
+}
+/*FIN SECCION3*/
+/*SECCION 4*/
+
+.seccion4{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-4{
+    margin-left: 12%;
+    margin-bottom: 36px;
+    font-weight: 300;
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.imagen{
+    width: 33.33%;
+}
+/*FIN SECCION 4*/
+
+/*SECCION 5*/
+
+.sub-5{
+    margin-left: 12%;
+    margin-bottom: 5%;
+    font-weight: 300;
+}
+
+.logos-temas{
+    display: flex;
+    padding: 0% 12%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.iconos-s5{
+    text-align: center;
+}
+
+.des-icon{
+    font-family: var(--fuente-plex-sans);
+    font-weight: bold;
+    font-size: 24px;
+}
+/*FIN SECCION 5*/
+
+/*SECCION 6*/
+.seccion6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.seccion6 .sub-6{
+    color: var(--blanco);
+    font-family: var(--fuente-plex-sans);
+    font-size: 48px;
+}
+
+.boton-2{
+    width: 25%;
+    margin-top: 2%;
+}
+/*FIN SECCION 6*/
+
+/*FOOTER*/
+.footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.footer .derechos{
+    font-family: var(--fuente-plex-mono);
+}
+
+
+
+.footer .redes-sociales .redsocial{
+    width: 18px;
+    height: 18px;
+    margin: 0 25px;
+}
+
+/*FIN FOOTER*/
+
+
+@media (max-width:1200px) {
+
+    nav{
+        padding: 0 25px;
+    }
+    .logo{
+        width: 10%;
+        height: 60%;
+    }
+    nav ul li a {
+    font-size: 19px;
+    }
+
+    .seccion1 .des-1 {
+        font-size: 25px;
+        font-family: var(--fuente-plex-mono);
+        max-width: 80vw;
+    }
+
+    .boton-1 {
+        margin-top: 56px;
+        font-size: 25px;
+        width: 35%;
+    }
+
+    .seccion2{
+        padding: 20% 0 20% 0;
+        
+    }
+
+    .canciones{
+        margin-top: 26px;
+    }
+
+    .cancion {
+        width: 100%;
+        margin: 0px 26px 0px 26px;
+}
+
+.canciones{
+    padding-bottom: 5%;
+}
+
+.cancion {
+    width: 100%;
+    margin: 10px 26px 10px 26px;
+}
+    .seccion3{
+        flex-direction: column;
+        margin-left: 2%;
+    }
+
+    .celular {
+        position: relative;
+        top: -200px;
+        width: 70%;
+    }
+
+
+    .seccion3 .sub-3 {
+        font-weight: 300;
+        font-size: 95px;
+    }
+
+    .seccion3 .des-seccion3 {
+        margin-left: 0px;
+        margin-bottom: 5%;
+    }
+
+    .texto-seccion3 {
+        font-size: 30px;
+        font-family: var(--fuente-plex-mono);
+        max-width: 80%;
+    }
+    .imagen{
+        width: 100%;
+    }
+
+    .sub-4 {
+        margin-left: 10%;
+        margin-bottom: 36px;
+        font-weight: 300;
+        font-size: 88px;
+    }
+
+    .sub-5 {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        font-weight: 300;
+        font-size: 70px;
+    }
+
+    .iconos-s5 {
+        width: 25%;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .icon-5{
+        width: 65%;
+        height: 15vh;
+    }
+
+    .des-icon{
+        font-size: 20px;
+    }
+
+    .boton-2 {
+        width: 55%;
+        margin-top: 2%;
+        font-size: 30px;
+    }
+
+    .footer .derechos {
+        font-family: var(--fuente-plex-mono);
+        font-size: 22px;
+    }
+
+    .footer .redes-sociales .redsocial {
+        width: 30px;
+        height: 35px;
+        margin: 0 25px;
+    }
+}
+@media (max-width: 858px) {
+
+    nav{
+        padding: 0 16px;
+    }
+    .checkbtn {
+    display: block;
+    }
+    ul {
+    position: fixed;
+    width: 100%;
+    background: var(--color-azul);
+    top: 80px;
+    left: -100%;
+    padding-left: 20px;
+    transition: all 0.5s;
+    }
+    nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+    }
+    nav ul li a {
+    font-size: 16px;
+    color: var(--blanco);
+    }
+    #check:checked ~ ul {
+    left: 0;
+    }
+
+    #check:checked + label> .fa-bars{
+        display: none;
+    } 
+    #check:not(:checked) + label> .fa-times{
+        display: none;
+    }
+
+
+    .iconos-s5 {
+        text-align: center;
+        margin-top: 15%;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+
+    .logo {
+        width: 10%;
+        height: 60%;
+    }
+
+    .fa, .fas {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    nav {
+        padding: 0 45px;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        color: var(--blanco);
+    }
+
+    .seccion1 .des-1 {
+        font-size: 24px;
+        font-family: var(--fuente-plex-mono);
+        max-width: 80vw;
+}
+
+    .seccion1 .sub-1 {
+        font-size: 53px;
+        font-family: var(--fuente-plex-sans);
+}
+
+    .boton-1 {
+        width: 60%;
+        margin-top: 56px;
+        font-size: 25px;
+}
+    .seccion2{
+        padding: 20% 0px 150px 0px;
+    }
+
+    .canciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .seccion3{
+        margin-left: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .des-seccion3{
+        
+        padding-left: 10%;
+    }
+
+    .celular {
+        position: relative;
+        top: -150px;
+        width: 70%;
+        height: auto;
+        margin: 0;
+    }
+
+    .seccion3 .sub-3 {
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    .texto-seccion3 {
+        font-size: 24px;
+        font-family: var(--fuente-plex-mono);
+        max-width: 90%;
+    }
+
+    .sub-4 {
+        margin-left: 10%;
+        margin-bottom: 36px;
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    .imagen {
+        width: 50%;
+    }
+
+    .logos-temas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconos-s5 {
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .icon-5{
+        width: 65%;
+        height: 15vh;
+    }
+
+    .sub-5 {
+        font-size: 60px;
+        margin-left: 10%;
+    }
+
+    .des-icon{
+        font-size: 35px;
+    }
+
+    .seccion6 .sub-6 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .boton-2 {
+        width: 75%;
+        margin-top: 5%;
+        font-size: 25px;
+        border: none;
+    }
+
+    .footer .redes-sociales .redsocial {
+        width: 20px;
+        height: 20px;
+        margin: 1% 25px 5% 0;
+    }
+
+    .footer .derechos {
+        font-family: var(--fuente-plex-mono);
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px){
+
+    nav {
+        padding: 0px 25px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        color: var(--blanco);
+    }
+
+    .logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .fa, .fas {
+        font-weight: 900;
+        font-size: 24px;
+    }
+
+    .seccion1{
+        padding: 12% 0% 0% 5%;
+        margin-bottom: 5%;
+    }
+
+    .seccion1 .sub-1{
+        font-size: 36px;
+        font-weight: lighter;
+        max-width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .seccion1 .sub-1 .punto{
+        color: black;
+    }
+
+    .seccion1 .des-1{
+        font-weight: normal;
+        font-family: var(--fuente-plex-mono);
+        font-size: 14px;
+        max-width: 96%;
+    }
+
+    .seccion1 .boton-1{
+        width: 93%;
+        margin-bottom: 5%;
+    }
+
+
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        padding: 20% 0 150px 0;
+        height: auto;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    }
+
+    .seccion2 .sub-2{
+        font-size: 36px;
+        font-weight: lighter;
+    }
+
+    
+    .seccion-2{
+        padding:23%;
+    }
+
+    .seccion2 .sub-2 {
+        font-size: 36px;
+        font-weight: lighter;
+        padding-left: 5%;
+    }
+
+
+    .canciones .cancion{
+        margin: 16px;
+        margin-bottom: 0px;
+    }
+
+    .seccion3{
+        margin: 0%;
+        padding-left: 0;
+        margin-bottom: 20%;
+    }
+
+    
+
+    .celular{
+        width: 100%;
+        height: 25%;
+        top:-110px;
+    }
+
+    .seccion3 .des-seccion3{
+        margin-top: -35%;
+        margin: 0 10%;
+    }
+
+    .seccion3 .sub-3{
+        max-width: 80%;
+        font-size: 36px;
+    }
+
+    .seccion3 .texto-seccion3{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .seccion3 .des-seccion3 {
+        padding:5%;
+        margin: 0;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    .seccion4 .sub-4{
+        margin-left: 10%;
+        padding-left: 0px;
+        font-size: 36px;
+        margin-bottom: 5%;
+    }
+
+    .seccion5{
+        margin-bottom: 15%;
+    }
+
+    .seccion5 .sub-5{
+        margin-left: 5%;
+        font-size: 36px;
+    }
+
+    .des-icon{
+        font-size: 24px;
+        font-weight: 1000;
+    }
+
+    .seccion6{
+        height: auto;
+        margin-bottom: 10%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .seccion6 .sub-6{
+        font-size: 36px;
+        text-align: center;
+        padding: 12% 10%;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .boton-2 {
+        width: 90%;
+        margin-top: 5%;
+        font-size: 20px;
+        border: none;
+    }
+
+    .footer {
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 320px){
+    nav {
+        padding: 0px 25px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        color: var(--blanco);
+    }
+
+    .logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .fa, .fas {
+        font-weight: 900;
+        font-size: 24px;
+    }
+
+    .seccion1 .boton-1 {
+        width: 93%;
+        margin-bottom: 5%;
+        font-size: 16px;
+    }
+
+    .seccion-2{
+        padding:23%;
+    }
+
+    .seccion2 .sub-2 {
+        font-size: 36px;
+        font-weight: lighter;
+        padding-left: 5%;
+    }
+
+    .seccion3 .des-seccion3 {
+        padding:5%;
+        margin: 0;
+    }
+
+    .seccion4 .sub-4 {
+        margin-left: 5%;
+        padding-left: 0px;
+        font-size: 36px;
+        margin-bottom: 5%;
+    }
+
+    .seccion5 .sub-5 {
+        margin-left: 5%;
+        font-size: 36px;
+    }
+
+    .seccion6 {
+        min-height: auto;
+        margin-bottom: 13%;
+        padding-bottom: 10%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .boton-2 {
+        width: 90%;
+        margin-top: 5%;
+        font-size: 16px;
+        border: none;
+    }
+
+    .footer {
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .footer .derechos {
+        font-family: var(--fuente-plex-mono);
+        font-size: 15px;
+    }
+}
